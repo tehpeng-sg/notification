@@ -1,11 +1,8 @@
 const express = require('express'); //import express
 const email = require('./routers/email-router');
 
-// create router
-const router = express.Router();
-
 const app = express();
-app.use(email);
+app.use('/email', email);
 
 const port = 6000;
 app.listen(port, () => {

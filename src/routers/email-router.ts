@@ -1,8 +1,9 @@
-const { Router } = require('express');
-const Email = require('../email/controller/email-controller');
+import { Router } from 'express';
+const { getTest, getTest2 } = require('../email/controller/email-controller.ts');
 
-const r = Router();
+const route = Router();
 
-r.get('/email', Email);
+route.get('/test1', getTest);
+route.get('/test2', getTest2);
 
-module.exports = r;
+module.exports = route;
