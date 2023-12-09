@@ -1,5 +1,5 @@
 import { Router } from 'express';
-const { getTest, getTest2 } = require('../email/controller/email-controller.ts');
+const { getTest, getTest2 } = require('../platform/email/controller/email-controller');
 
 const route = Router();
 
